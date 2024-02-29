@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('backgrounds.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #534437;
+    height: 40px;
+    /* 设置页眉的高度为80像素 */
+}
+
+.clinic-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #534437;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: #312222;
+    font-size: 30px;
+    /*导航栏字体大小*/
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+button.active {
+    background-color: #be4f2d;
+    /* 鼠标悬停时的颜色 */
+    color: #fff;
+    /* 鼠标悬停时加粗 */
+}
+
+button:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* styles.css */
+
+#circle-image-container {
+    width: 200px;
+    /* 设置容器的宽度 */
+    height: 200px;
+    /* 设置容器的高度 */
+    border-radius: 50%;
+    /* 将容器变成圆形 */
+    overflow: hidden;
+    /* 隐藏超出容器范围的部分 */
+    position: relative;
+    /* 设置容器的定位方式为绝对定位 */
+    top: 50px;
+    /* 设置容器距离顶部的距离 */
+    left: 50px;
+    /* 设置容器距离左侧的距离 */
+    display: flex;
+    /* 使用 flexbox 布局 */
+    justify-content: center;
+    /* 水平居中显示 */
+    align-items: center;
+    /* 垂直居中显示 */
+}
+
+#circle-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 保持图片比例并覆盖整个容器 */
+    position: absolute;
+    /* 将图片设置为绝对定位 */
+}
