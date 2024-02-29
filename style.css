@@ -16,8 +16,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #534437;
-    height: 40px;
+    background-color: #0ce7a9;
+    height: 60px;
     /* 设置页眉的高度为80像素 */
 }
 
@@ -34,7 +34,7 @@ header {
 
 footer {
     text-align: center;
-    background-color: #534437;
+    background-color: #0ce7a9;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -49,7 +49,7 @@ nav {
 button {
     border: none;
     background-color: transparent;
-    color: #312222;
+    color: #fff;
     font-size: 30px;
     /*导航栏字体大小*/
     border-radius: 20px;
@@ -59,7 +59,7 @@ button {
 }
 
 button.active {
-    background-color: #be4f2d;
+    background-color: #0f07f6;
     /* 鼠标悬停时的颜色 */
     color: #fff;
     /* 鼠标悬停时加粗 */
@@ -74,7 +74,7 @@ button:hover {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: #f0f0f0;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,34 +93,23 @@ button:hover {
 
 /* styles.css */
 
-#circle-image-container {
-    width: 200px;
-    /* 设置容器的宽度 */
-    height: 200px;
-    /* 设置容器的高度 */
+.头像 {
+
+    width: 300px;
+    /* 设置宽度 */
+    height: 300px;
+    /* 设置高度 */
+    display: block;
+    /* 将图片显示为块级元素 */
+    margin: 0 auto;
+    /* 居中显示图片 */
     border-radius: 50%;
-    /* 将容器变成圆形 */
+    /* 将图片变为圆形 */
     overflow: hidden;
-    /* 隐藏超出容器范围的部分 */
-    position: relative;
-    /* 设置容器的定位方式为绝对定位 */
-    top: 50px;
-    /* 设置容器距离顶部的距离 */
-    left: 50px;
-    /* 设置容器距离左侧的距离 */
-    display: flex;
-    /* 使用 flexbox 布局 */
-    justify-content: center;
-    /* 水平居中显示 */
-    align-items: center;
-    /* 垂直居中显示 */
+    /* 隐藏溢出部分 */
 }
 
-#circle-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* 保持图片比例并覆盖整个容器 */
-    position: absolute;
-    /* 将图片设置为绝对定位 */
+.用户名 {
+    text-align: center;
+    font-size: 20px;
 }
