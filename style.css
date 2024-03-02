@@ -16,25 +16,25 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #0ce7a9;
+    background-color: #14cbd9;
     height: 60px;
     /* 设置页眉的高度为80像素 */
 }
 
 .clinic-name {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
 }
 
 footer {
     text-align: center;
-    background-color: #0ce7a9;
+    background-color: #14cbd9;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -50,10 +50,10 @@ button {
     border: none;
     background-color: transparent;
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
     /*导航栏字体大小*/
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     cursor: pointer;
     outline: none;
 }
@@ -93,11 +93,10 @@ button:hover {
 
 /* styles.css */
 
-.头像 {
-
-    width: 300px;
+.头像 img {
+    width: 200px;
     /* 设置宽度 */
-    height: 300px;
+    height: 200px;
     /* 设置高度 */
     display: block;
     /* 将图片显示为块级元素 */
@@ -122,13 +121,130 @@ button:hover {
     color: #e7b00c
 }
 
-.主页图片 {
+#slider {
+   
+    width: 600px;
+    /* 根据图片大小调整 */
+    height: 400px;
+    /* 根据图片大小调整 */
     display: block;
-    /* 将图片显示为块级元素 */
-    margin: 0;
+    margin: 0 auto;
     /* 居中显示图片 */
-    width: 100vw;
-    /* 设置图片宽度为视口宽度 */
-    height: auto;
-    /* 高度自适应 */
+    position: relative;
+    overflow: hidden;
+}
+
+#slider img {
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    /* 过渡效果：1秒内淡入淡出 */
+    
+}
+
+#slider img:first-child {
+    opacity: 1;
+    /* 默认显示第一张图片 */
+}
+
+
+.table-container {
+    margin: 20px auto;
+    /* 设置表格与窗口边框的间距为20像素 */
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+    padding: 8px;
+    text-align: center;
+    font-size: 20px;
+    /* 设置字号为16像素 */
+}
+
+
+/* Style the settings container */
+.settings {
+    margin: 20px auto;
+    /* 增加上下边距以便更好地观察效果 */
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+/* Style the setting options */
+.settings p {
+    margin-bottom: 10px;
+    /* 保持原有的底部外边距 */
+    font-size: 20px;
+    /* 字体大小 */
+    color: #000;
+    /* 字体颜色设置为黑色 */
+    border: 1px solid #ccc;
+    /* 为每个选项添加边框 */
+    padding: 10px 0;
+    /* 调整内边距以增加高度，0表示左右内边距为0，根据需要调整 */
+    width: 80%;
+    /* 设置宽度为容器宽度的80%，可根据需要调整 */
+    box-sizing: border-box;
+    /* 确保边框和内边距不会增加元素的总宽度 */
+    display: block;
+    /* 使每个<p>标签占满整行 */
+    margin-left: auto;
+    /* 结合margin-right:auto实现水平居中 */
+    margin-right: auto;
+}
+
+/* Remove border from last item */
+.settings p:last-child {
+    border-bottom: none;
+    /* 最后一项去掉底部边框，保留其他边框 */
+}
+
+/* Hover effect for setting options */
+.settings p:hover {
+    cursor: pointer;
+    text-decoration: none;
+    /* 移除下划线，因为现在是方框设计 */
+    background-color: #f0f0f0;
+    /* 鼠标悬停时的背景色，可根据喜好调整 */
+}
+
+.indexInput {
+    border: 2px solid #007BFF;
+    /* 设置边框颜色 */
+    border-radius: 5px;
+    /* 圆角边框 */
+    display: block;
+    width: 90%;
+    padding: 10px 15px;
+    /* 内边距 */
+    margin: 20px auto;
+    /* 外边距 */
+    font-size: 16px;
+    /* 字体大小 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+    transition: all 0.3s ease;
+    /* 过渡效果 */
+}
+
+.indexInput:focus {
+    outline: none;
+    /* 移除聚焦时的默认轮廓线 */
+    border-color: #004085;
+    /* 聚焦时的边框颜色 */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    /* 聚焦时的阴影效果 */
+}
+
+.indexInput:hover {
+    border-color: #0056b3;
+    /* 鼠标悬停时的边框颜色 */
 }
