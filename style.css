@@ -1,11 +1,9 @@
 body {
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('backgrounds.jpg');
     background-size: cover;
     background-position: center;
-    background-color: #ffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -122,10 +120,10 @@ button:hover {
 }
 
 #slider {
-   
-    width: 400px;
+
+    width: 350px;
     /* 根据图片大小调整 */
-    height: 250px;
+    height: 300px;
     /* 根据图片大小调整 */
     display: block;
     margin: 0 auto;
@@ -135,14 +133,14 @@ button:hover {
 }
 
 #slider img {
-    margin-top: 20px;
+    margin-top: 5px;
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
     /* 过渡效果：1秒内淡入淡出 */
-    
+
 }
 
 #slider img:first-child {
@@ -247,4 +245,43 @@ button:hover {
 .indexInput:hover {
     border-color: #0056b3;
     /* 鼠标悬停时的边框颜色 */
+}
+
+.indexAside {
+    width: 25%;
+    padding-bottom: 150px;
+}
+
+.popularization {
+    border-top: 1px solid #ccc;
+    /* 为容器添加上边框作为第一个标题上方的分割线 */
+}
+
+.popularization p {
+    border-bottom: 1px solid #ccc;
+    /* 添加分割线 */
+    box-shadow: 0 2px 4px rgba(1, 37, 182, 0.1);
+    margin-top: 0px;
+    /* 减少说明性小字的顶部外边距 */
+    margin: 0;
+    /* 移除默认的外边距 */
+}
+
+.popularization h2 {
+    margin-bottom: 10px;
+    /* 减少标题的底部外边距 */
+}
+
+.popularization h2 a {
+    text-decoration: none;
+    /* 移除下划线 */
+    color: inherit;
+    /* 链接颜色与周围文本保持一致 */
+    display: block;
+    /* 使链接填满整个 h2，以便整个区域都可点击 */
+}
+
+.popularization h2 a:hover {
+    text-decoration: underline;
+    /* 鼠标悬停时添加下划线，增加可见性 */
 }
