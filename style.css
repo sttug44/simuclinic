@@ -123,9 +123,9 @@ button:hover {
 
 #slider {
    
-    width: 600px;
+    width: 400px;
     /* 根据图片大小调整 */
-    height: 400px;
+    height: 250px;
     /* 根据图片大小调整 */
     display: block;
     margin: 0 auto;
