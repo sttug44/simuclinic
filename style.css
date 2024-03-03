@@ -40,6 +40,7 @@ footer {
 }
 
 nav {
+    height: 60px;
     display: flex;
     justify-content: space-around;
 }
@@ -199,12 +200,6 @@ button:hover {
     margin-right: auto;
 }
 
-/* Remove border from last item */
-.settings p:last-child {
-    border-bottom: none;
-    /* 最后一项去掉底部边框，保留其他边框 */
-}
-
 /* Hover effect for setting options */
 .settings p:hover {
     cursor: pointer;
@@ -255,16 +250,18 @@ button:hover {
 .popularization {
     border-top: 1px solid #ccc;
     /* 为容器添加上边框作为第一个标题上方的分割线 */
+
 }
 
 .popularization p {
     border-bottom: 1px solid #ccc;
     /* 添加分割线 */
-    box-shadow: 0 2px 4px rgba(1, 37, 182, 0.1);
+
     margin-top: 0px;
     /* 减少说明性小字的顶部外边距 */
     margin: 0;
     /* 移除默认的外边距 */
+    color: inherit;
 }
 
 .popularization h2 {
@@ -284,4 +281,128 @@ button:hover {
 .popularization h2 a:hover {
     text-decoration: underline;
     /* 鼠标悬停时添加下划线，增加可见性 */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-button {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.circle-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    /* 设置文字颜色为白色 */
+    border: none;
+    /* 移除边框 */
+}
+
+#consultation {
+    background-color: #4CAF50;
+    /* 绿色 */
+}
+
+#registration {
+    background-color: #2196F3;
+    /* 蓝色 */
+}
+
+#inquiry {
+    background-color: #FFC107;
+    /* 黄色 */
+}
+
+
+.buttons {
+    display: flex;
+    /* 启用Flexbox布局 */
+    justify-content: space-between;
+    /* 使子元素之间的间隔均匀 */
+    padding: 0 10%;
+    /* 在容器两侧添加一些内边距以避免内容紧贴边缘 */
+}
+
+#Notice {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.reminder-list {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reminder-list {
+    list-style: none;
+    padding: 0;
+}
+
+.reminder-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.checkmark {
+    color: green;
+}
+
+.footer-button-container {
+    position: fixed;
+    /* 使用fixed定位，使其脱离文档流 */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* 底部对齐 */
+    text-align: center;
+    /* 文本居中，以便按钮可以居中 */
+    padding: 10px 0;
+    /* 添加一些内边距 */
+    background-color: #14cbd9;
+    /* 背景颜色，可根据需要调整 */
+}
+
+.agree-button {
+    padding: 10px 20px;
+    /* 按钮内边距 */
+    font-size: 16px;
+    /* 字体大小 */
+    border: none;
+    /* 移除边框 */
+    background-color: #4CAF50;
+    /* 按钮背景颜色 */
+    color: white;
+    /* 文字颜色 */
+    cursor: pointer;
+    /* 鼠标悬停时的光标形状 */
+}
+
+.agree-button:hover {
+    background-color: #45a049;
+    /* 鼠标悬停时的按钮背景颜色 */
+}
+
+.noticeContent{
+    margin: 0 20px;
 }
