@@ -1,0 +1,32 @@
+/* style.css */
+#contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-btn {
+    margin: 10px 0;
+    padding: 10px; /* 增加填充以放大按钮，便于触摸操作 */
+    font-size: 16px; /* 调整字体大小 */
+}
+
+#message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    width: 80%; /* 适应屏幕宽度 */
+    max-width: 400px; /* 最大宽度，确保在大屏幕上也能良好显示 */
+}
+
+/* 响应式设计：针对小屏幕设备的样式调整 */
+@media (max-width: 600px) {
+    .contact-btn {
+        font-size: 14px; /* 在小屏幕上进一步调整字体大小 */
+        padding: 15px; /* 增加填充，使按钮更易触摸 */
+    }
+}
