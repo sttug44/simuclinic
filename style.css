@@ -289,7 +289,6 @@ button:hover {
 }
 
 .back-button {
-    font-size: 25px;
     text-decoration: none;
 }
 
@@ -456,6 +455,7 @@ button:hover {
 .back-button {
     font-size: 24px;
     margin-left: 10px;
+    text-decoration: none; /* 去除下划线 */
 }
 
 .commuheader h1 {
@@ -468,6 +468,7 @@ button:hover {
     flex-direction: column;
     font-size: 20px;
     border-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .commuContent p {
@@ -477,12 +478,13 @@ button:hover {
 }
 
 .commuContent p:nth-child(odd) {
-    text-align: left;
-    color: green;
+    text-align: right;
 }
 
 .commuContent p:nth-child(even) {
-    text-align: right;
+
+    text-align: left;
+    color: green;
 }
 
 .custom-popup {
@@ -494,7 +496,7 @@ button:hover {
     transform: translate(-50%, -50%);
     width: 300px;
     /* 设置弹窗宽度 */
-    height: 400px;
+    height: 600px;
     /* 设置弹窗高度 */
     padding: 20px;
     background-color: #fff;
@@ -511,4 +513,8 @@ button:hover {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+}
+
+.my-icon{
+    font-size: 2em;
 }

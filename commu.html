@@ -75,28 +75,32 @@
         <h1>医师名称</h1>
     </div>
     <div class="commuContent">
-        <p><i class="avatar-left fas fa-user"></i>&nbsp commuContent</p>
-        <p>commuContent &nbsp<i class="avatar-left fas fa-user"></i></p>
-        <p><i class="avatar-left fas fa-user"></i>&nbsp commuContent</p>
-        <p>commuContent &nbsp<i class="avatar-left fas fa-user"></i></p>
-        <p><i class="avatar-left fas fa-user"></i>&nbsp commuContent</p>
-        <p>commuContent &nbsp<i class="avatar-left fas fa-user"></i></p>
-        <p><i class="avatar-left fas fa-user"></i>&nbsp commuContent</p>
-        <p>commuContent &nbsp<i class="avatar-left fas fa-user"></i></p>
-        <p><i class="avatar-left fas fa-user"></i>&nbsp commuContent</p>
-        <p>commuContent &nbsp<i class="avatar-left fas fa-user"></i></p>
-        <p><i class="avatar-left fas fa-user"></i>&nbsp commuContent</p>
-        <p>commuContent &nbsp<i class="avatar-left fas fa-user"></i></p>
-        <p><i class="avatar-left fas fa-user"></i>&nbsp commuContent</p>
-        <p>commuContent &nbsp<i class="avatar-left fas fa-user"></i></p>
-        <p><i class="avatar-left fas fa-user"></i>&nbsp commuContent</p>
-        <p>commuContent &nbsp<i class="avatar-left fas fa-user"></i></p>
+        <p>医生，您好。我最近感觉口腔有些不适，您能帮我看看吗？ &nbsp<i class="avatar-left fas fa-user my-icon"></i></p>
+        <p><i class="fas fa-user-nurse my-icon"></i>&nbsp 您好，请详细描述一下您的不适感。</p>
+        <p>主要是左边下颌的几颗牙齿有持续性的钝痛，尤其在咀嚼食物时更加明显。 &nbsp<i class="avatar-left fas fa-user my-icon"></i></p>
+        <p><i class="fas fa-user-nurse my-icon"></i>&nbsp 请问疼痛是否放射到其他部位，例如头部或颈部？</p>
+        <p>有时会感觉到左边太阳穴附近也有些疼痛。 &nbsp<i class="avatar-left fas fa-user my-icon"></i></p>
+        <p><i class="fas fa-user-nurse my-icon"></i>&nbsp 好的，请问您最近有没有牙龈肿胀、出血或流脓的情况</p>
+        <p>没有流脓，但刷牙时确实有出血，而且感觉牙龈有些肿胀。 &nbsp<i class="avatar-left fas fa-user my-icon"></i></p>
+        <p><i class="fas fa-user-nurse my-icon"></i>&nbsp 好的，请问您有没有注意到牙齿松动或者移位的现象？</p>
+        <p>有一颗牙齿似乎有些松动，但不是很明显。 &nbsp<i class="avatar-left fas fa-user my-icon"></i></p>
+        <p><i class="fas fa-user-nurse my-icon"></i>&nbsp 谢谢。接下来我会为您进行口腔检查。请您提供几张您口腔内部的图片，我会查看您的牙齿、牙龈和口腔其他部分。</p>
+        <p>好的（发送图片） &nbsp<i class="avatar-left fas fa-user my-icon"></i></p>
+        <p><i class="fas fa-user-nurse my-icon"></i>&nbsp 我注意到您左边下颌有几颗牙齿周围有牙结石和牙菌斑，牙龈也有些红肿。这些都是导致您不适的可能原因。</p>
+        <p>那应该怎么治疗呢？ &nbsp<i class="avatar-left fas fa-user my-icon"></i></p>
+        <p><i class="fas fa-user-nurse my-icon" ></i>&nbsp
+            首先，我建议您进行一次全面的洁牙，以去除牙结石和牙菌斑。同时，我会为您开具一些消炎止痛药以缓解目前的症状。之后，您需要更加注意口腔卫生，定期刷牙、使用牙线和漱口水。</p>
+        <p>好的，我会注意的。还有其他建议吗？ &nbsp<i class="avatar-left fas fa-user my-icon"></i></p>
+        <p><i class="fas fa-user-nurse my-icon"></i>&nbsp 是的，为了预防类似问题的再次发生，我建议您定期来医院进行口腔检查和洁牙。此外，均衡饮食、减少糖分摄入、戒烟限酒等也是维护口腔健康的重要措施。
+        </p>
+        <p>好的，谢谢您。 &nbsp<i class="avatar-left fas fa-user my-icon"></i></p>
+        <p><i class="fas fa-user-nurse my-icon"></i>&nbsp 不客气，祝您早日康复。</p>
     </div>
 
     <div class="footer">
         <div class="button">图片</div>
         <div class="button">语音</div>
-        <div class="button" onclick="showPopup()">生成报告单</div>
+        <div class="button" onclick="showPopup()">生成药物单</div>
     </div>
 
     <div class="line"></div>
@@ -107,8 +111,12 @@
     </div>
 
     <div class="custom-popup" id="popup">
-        <h2>这是自定义的弹窗</h2>
-        <p>弹窗内容可以在这里添加</p>
+        <h2>药物推荐</h2>
+        <p><b>抗生素</b>：用于治疗口腔感染，如牙周炎、根尖周炎等。常见的抗生素包括阿莫西林、头孢等。</p>
+        <p><b>口腔消毒剂</b>：用于口腔杀菌、消毒，预防口腔感染。常见的口腔消毒剂包括氯己定、过氧化氢等。</p>
+        <p><b>止痛药</b>：用于缓解口腔疼痛，如牙痛、口腔溃疡等。常见的止痛药包括阿司匹林、布洛芬等。</p>
+        <p><b>抗过敏药</b>：用于缓解口腔过敏反应，如口腔溃疡、口腔炎等。常见的抗过敏药包括扑尔敏、氯雷他定等。</p>
+        <p><b>口腔抗炎药</b>：用于减轻口腔炎症，如牙龈炎、牙周炎等。常见的口腔抗炎药包括地塞米松、泼尼松等。</p>
         <button class="close-button" onclick="hidePopup()">关闭</button>
     </div>
 
